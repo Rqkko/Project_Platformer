@@ -410,9 +410,6 @@ sources/0 = SubResource("TileSetAtlasSource_sao5h")
 
 [node name="World" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_0pbi3")]
-position = Vector2(268, 305)
-
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_a580m")
 format = 2
@@ -430,5 +427,12 @@ scale = Vector2(3.22083, 3.22083)
 texture = ExtResource("3_bi7im")
 metadata/_edit_lock_ = true
 
-[node name="Frog" parent="." instance=ExtResource("5_6s0rc")]
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Player" parent="Player" instance=ExtResource("1_0pbi3")]
+position = Vector2(268, 305)
+
+[node name="Mobs" type="Node2D" parent="."]
+
+[node name="Frog" parent="Mobs" instance=ExtResource("5_6s0rc")]
 position = Vector2(610, 332)

@@ -2,5 +2,5 @@ res://main.tscn
 res://world.tscn
 res://Player/Player.tscn
 res://BG.tscn
-res://Frog.gd
 res://Frog.tscn
+res://Frog.gd
